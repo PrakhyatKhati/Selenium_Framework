@@ -20,6 +20,8 @@ def driver():
         "profile.password_manager_leak_detection":False
 
     })
+    # this option disables the chrome password manager, preveting save password etc.popup that interfere with cselenium automation tests.
+
     driver = webdriver.Chrome(options= opts)
     driver.maximize_window()
 
